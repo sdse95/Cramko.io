@@ -49,12 +49,32 @@ hmtl{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.section{
-    padding-top: 8rem;
+.main{
+    padding-top: 9.4rem ;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+.box{
+    height: auto;
+    width: auto;
+}
+.m-box1{
+    width: 100%;
+}
+.m-box1-fig{
+    width: 100%;
+}
+.m-box1-fig-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section{
+    display: flex;
     align-items: center;
     background-color: var(--color-quarter);
+    justify-content: space-between;
 }
 .sec-fig{
     width: 40%;
@@ -64,12 +84,12 @@ hmtl{
 .sec-fig-img{
     width: 100%;
     height: 100%;
-    border-style:groove;
-    border: 2px solid var(--color-terciary);
+
 }
 .sec-info{
     width:40%;
     height: 80%;
+    padding-left: 10rem;
     
 }
 h1{
