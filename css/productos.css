@@ -53,21 +53,32 @@ html{
     padding-bottom: 30px;
 }
 .main{
-    padding-top: 14.8rem ;
-    display: flex;
-    flex-direction: column;
+    padding-top: 30rem ;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    height: 100%;
 }
-.box{
-    height: auto;
-    width: auto;
+.prodt1{
+    display: grid;
+    grid-column: 2;
 }
-.m-box1{
+.prodt1-fig{
+    width: 80%;
+    height: 80%;
+}
+.prodt1-fig img{
     width: 100%;
+    height: 100%;
 }
-.m-box1-fig{
-    width: 100%;
+.prodt2{
+    display: grid;
+    grid-column: 3;
 }
-.m-box1-fig-img{
+.prodt2-fig{
+    width: 80%;
+    height: 80%;
+}
+.prodt2-fig img{
     width: 100%;
     height: 100%;
 }
@@ -101,7 +112,12 @@ p, a{
     font-size: 2rem;
     font-family: var(--font-primary);
 }
-
+.main h1{
+    color: var(--color-terciary);
+}
+.main p{
+    color:var(--color-secondary)
+}
 
 .foot{
     margin-top:100px;
