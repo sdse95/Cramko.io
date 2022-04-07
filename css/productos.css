@@ -11,7 +11,7 @@
     margin:0;
     padding: 0;
 }
-hmtl{
+html{
     font-size: 62.5%;
 }
 .header{
@@ -39,7 +39,6 @@ hmtl{
 .nav-menu-ul a:hover{
     color: var(--color-primary);
     background-color: var(--color-secondary);
-
 }
 .container{
     background-color: var(--color-secondary);
@@ -65,7 +64,7 @@ p{
 }
 
 .foot{
-    margin-top:400px;
+    margin-top: 100px;
     width:100%;
     background: var(--color-secondary);
     border-top: 2px solid var(--color-terciary);
