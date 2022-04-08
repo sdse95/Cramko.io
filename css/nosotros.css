@@ -65,9 +65,12 @@ p, a{
 
 
 
-
 .foot{
-    margin-top:600px;
     width:100%;
-    height:200px;
+    height:8rem;
+    background: var(--color-secondary);
+    border-top: 2px solid var(--color-terciary);
+}
+.f-menu p{
+    color: var(--color-primary);
 }
