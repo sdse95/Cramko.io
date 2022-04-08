@@ -100,13 +100,13 @@ p, a{
     font-family: var(--font-primary);
     color: var(--color-secondary);
 }
-.f-menu p{
-    color: var(--color-primary);
-}
-.foot{
 
+.foot{
     width:100%;
     height:8rem;
     background: var(--color-secondary);
     border-top: 2px solid var(--color-terciary);
+}
+.f-menu p{
+    color: var(--color-primary);
 }
