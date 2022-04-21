@@ -13,16 +13,25 @@
 }
 html{
     font-size: 62.5%;
+    font-family: var(--font-primary);
+
 }
 .header{
     position: fixed;
     width:100%;    
 }
 .nav-menu{
+    height: 50px;
     display: flex;
     padding-left: 2.5rem;
     justify-content: space-between;
     background-color: var(--color-primary);
+}
+.h-l-figure{
+    height: 50px;
+}
+.h-l-figure img{
+    height: 100%;
 }
 .nav-menu-ul{
     display: flex;
@@ -40,7 +49,7 @@ html{
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
-.container{
+.container {
     background-color: var(--color-secondary);
     border-bottom: 2px solid var(--color-terciary);
     display: flex;
@@ -49,75 +58,56 @@ html{
     flex-direction: column;
     color: #fff;
     line-height: 1.5;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 2rem;
 }
-.main{
-    padding-top: 30rem ;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    height: 100%;
-}
-.prodt1{
-    display: grid;
-    grid-column: 2;
-}
-.prodt1-fig{
-    width: 80%;
-    height: 80%;
-}
-.prodt1-fig img{
-    width: 100%;
-    height: 100%;
-}
-.prodt2{
-    display: grid;
-    grid-column: 3;
-}
-.prodt2-fig{
-    width: 80%;
-    height: 80%;
-}
-.prodt2-fig img{
-    width: 100%;
-    height: 100%;
-}
-.section{
-    display: flex;
-    align-items: center;
-    background-color: var(--color-quarter);
-    justify-content: space-between;
-}
-.sec-fig{
-    width: 40%;
-    height: 40%;
-    background: var(--color-primary);
-}
-.sec-fig-img{
-    width: 100%;
-    height: 100%;
 
+
+.main-container{
+    padding-top: 17rem;
 }
-.sec-info{
-    width:40%;
-    height: 80%;
-    padding-left: 10rem;    
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 26px;
+    place-content: center;
+    padding-bottom: 2.4rem;
 }
-h1{
-    font-size: 5rem;
-    font-family: var(--font-secondary);
-    color: var(--color-primary);
+.product-card{
+    width: 240px;
 }
-p, a{
-    font-size: 2rem;
-    font-family: var(--font-primary);
+.product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
 }
-.main h1{
-    color: var(--color-terciary);
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
 }
-.main p{
-    color:var(--color-secondary)
+.product-info figure{
+    margin: 0;
 }
+.product-info figure img{
+    width: 35px;
+    height: 35px;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-info div p:nth-child(2) {
+    font-size: var(--sd);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
 
 .foot{
     width:100%;
