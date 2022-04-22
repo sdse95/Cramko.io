@@ -30,7 +30,7 @@ html{
     position: relative;
     height: 50px;
     transition: 0.05s;
-    left: 0;
+    left: 0 ;
 
 }
 .h-l-figure img{
@@ -170,6 +170,12 @@ p, a{
         justify-content: space-around;
     }
     .sec-info{
+        padding-left: 3rem;
+    }
+    .sec-info h1{
+        font-size: 4rem;
+    }
+    .sec-info p{
         padding-left: 3rem;
     }
     h1{
