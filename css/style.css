@@ -29,7 +29,7 @@ html{
 .h-l-figure{
     position: relative;
     height: 50px;
-    transition: 0.2s;
+    transition: 0.05s;
 
 }
 .h-l-figure img{
