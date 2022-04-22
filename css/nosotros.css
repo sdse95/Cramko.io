@@ -13,6 +13,7 @@
 }
 html{
     font-size: 62.5%;
+    font-family: var(--font-primary);
 }
 .header{
     position: fixed;
@@ -23,6 +24,12 @@ html{
     padding-left: 2.5rem;
     justify-content: space-between;
     background-color: var(--color-primary);
+}
+.h-l-figure{
+    height: 50px;
+}
+.h-l-figure img{
+    height: 100%;
 }
 .nav-menu-ul{
     display: flex;
@@ -51,10 +58,38 @@ html{
     line-height: 1.5;
     padding-top: 30px;
     padding-bottom: 30px;
+    transition: 0.2s;
+}
+.container h1{
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    transition: 0.2s;
+}
+.container p{
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    transition: 0.2s;
 }
 .main{
-    padding-top: 25rem;
+    padding-top: 27rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50rem);
+    gap: 3.5rem;
+    place-content: center;
+    padding-bottom: 2.4rem;
 }
+.box h1{
+    font-size: 5rem;
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+
+}
+.box p{
+    font-size: 2rem;
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+}
+
 h1{
     font-size: 5rem;
     font-family: var(--font-secondary);
@@ -62,11 +97,14 @@ h1{
 }
 p, a{
     font-size: 2rem;
-    font-family: var(--font-primary);
+    text-decoration: none;
 }
-
-
-
+.video-nuestroProceso{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 9rem;
+}
 
 .foot{
     width:100%;

@@ -24,6 +24,12 @@ html{
     justify-content: space-between;
     background-color: var(--color-primary);
 }
+.h-l-figure{
+    height: 50px;
+}
+.h-l-figure img{
+    height: 100%;
+}
 .nav-menu-ul{
     display: flex;
     width: 50%;
@@ -48,7 +54,7 @@ html{
     padding-bottom: 30px;
 }
 .main{
-    padding-top: 14.8rem ;
+    padding-top: 10.8rem ;
     display: flex;
     flex-direction: column;
 }

@@ -33,13 +33,13 @@
       <main class="main">
           <div class="box">
             <a href="" class="m-box1">
-              <p class="tittle">Misión</p>
+              <h1 class="tittle">Misión</h1>
               <p class="sub-tittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni culpa ipsam minima porro quae expedita odit molestiae optio nesciunt. Vel, quaerat. Magnam aut porro eius! Explicabo distinctio ab maxime deserunt!</p>
             </a>
           </div>
           <div class="box">
             <a href="" class="m-box2">
-              <p class="tittle">Visión</p>
+              <h1 class="title">Visión</h1>
               <p class="sub-tittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni culpa ipsam minima porro quae expedita odit molestiae optio nesciunt. Vel, quaerat. Magnam aut porro eius! Explicabo distinctio ab maxime deserunt!</p>
               <figure class="m-b2-figure m-b-f">
                 <img src="" alt="">
@@ -49,16 +49,24 @@
           </div>
           <div class="box">
             <a href="" class="m-box3">
-              <p class="tittle"></p>
-              <figure class="m-b3-figure m-b-f">
+              <h1 class="tittle">Nuestro Proceso</h1>
+              <p class="sub-tittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni culpa ipsam minima porro quae expedita odit molestiae optio nesciunt. Vel, quaerat. Magnam aut porro eius! Explicabo distinctio ab maxime deserunt!</p>
+            </a>
+          </div>
+          <div class="box">
+            <a href="" class="m-box4">
+              <video class="video-nuestroProceso" autoplay muted>
+                <source src="./assets/videos/cramko-video1.mp4" type="video/mp4">
+              </video>
+              <figure class="m-b2-figure m-b-f">
                 <img src="" alt="">
               </figure>
-              <p class="sub-tittle">dsds</p>
+              <p class="sub-tittle"></p>
             </a>
           </div>
       </main>
-  
-  
+      
+
       <footer class="foot">
         <div class="f-menu">
           <ul class="f-l-ul">
@@ -69,6 +77,7 @@
         </div>
       </footer>
 <script>
+
 // When the user scrolls down 50px from the top of the document, resize the header's font size
 window.onscroll = function() {scrollFunction()};
 
@@ -81,6 +90,19 @@ function scrollFunction() {
     document.getElementById("title-container").style.fontSize = "xxx-large";
     document.getElementById("title-container-2").style.fontSize = "x-large";
     document.getElementById("container").style.padding = "3rem";
+  }
+}
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
   }
 }
 </script>
