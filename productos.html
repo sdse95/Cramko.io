@@ -18,20 +18,44 @@
         <figure class="h-l-figure">
           <img src="./assets/icons/CRAMKO-LOGO-HEADER.png" alt="Logo">
         </figure>
-        <ul class="nav-menu-ul">
+        <ul id="nav-menu-ul" class="nav-menu-ul">
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Contactanos</a></li>
         </ul>
       </div>
-      <div class="container">
-        <h1>Nuestros productos</h1>
-        <p>de alta calidad que ofrecemos</p>
+      <div id="container" class="container">
+        <h1 id="title-container">Nuestros productos</h1>
+        <p id="title-container-2">de alta calidad que ofrecemos</p>
       </div>
     </header>
     <section class="main-container">
         <div class="cards-container">
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">          
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">       
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">          
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">       
+            </div>
+            <div class="product-card">
+                <img src="./assets/img/cramko-product.jpg" alt="">
+            </div>
             <div class="product-card">
                 <img src="./assets/img/cramko-product.jpg" alt="">
             </div>
@@ -53,5 +77,23 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, et iste harum ipsam totam voluptatem alias veritatis enim adipisci reprehenderit? Assumenda impedit placeat magni blanditiis, sed voluptas doloribus beatae magnam.</p>
       </div>
     </footer>
+
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("title-container").style.fontSize = "x-large";
+    document.getElementById("title-container-2").style.fontSize = "medium";
+    document.getElementById("container").style.padding = "1rem";
+  } else {
+    document.getElementById("title-container").style.fontSize = "xxx-large";
+    document.getElementById("title-container-2").style.fontSize = "x-large";
+    document.getElementById("container").style.padding = "3rem";
+  }
+}
+</script>
+
 </body>
 </html>

@@ -21,7 +21,6 @@ html{
     width:100%;    
 }
 .nav-menu{
-    height: 50px;
     display: flex;
     padding-left: 2.5rem;
     justify-content: space-between;
@@ -58,12 +57,11 @@ html{
     flex-direction: column;
     color: #fff;
     line-height: 1.5;
-    padding: 2rem;
+    padding: 3rem;
+    transition: 0.2s;
 }
-
-
 .main-container{
-    padding-top: 17rem;
+    padding-top: 25rem;
 }
 .cards-container{
     display: grid;
@@ -117,4 +115,18 @@ html{
 }
 .f-menu p{
     color: var(--color-primary);
+}
+
+a{
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+}
+.container h1{
+    font-size: xxx-large;
+    transition: 0.2s;
+}
+.container p{
+    font-size: x-large;
+    transition: 0.2s;
 }

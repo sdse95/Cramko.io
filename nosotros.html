@@ -25,21 +25,22 @@
             <li><a href="#">Contactanos</a></li>
         </ul>
       </div>
-      <div class="container">
-        <h1>Nosotros</h1>
-        <p>Quienes somos</p>
+      <div id="container" class="container">
+        <h1 id="title-container">Nosotros</h1>
+        <p id="title-container-2">Quienes somos</p>
       </div>
     </header>
       <main class="main">
           <div class="box">
             <a href="" class="m-box1">
-              <p class="tittle"></p>
-              <p class="sub-tittle"></p>
+              <p class="tittle">Misión</p>
+              <p class="sub-tittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni culpa ipsam minima porro quae expedita odit molestiae optio nesciunt. Vel, quaerat. Magnam aut porro eius! Explicabo distinctio ab maxime deserunt!</p>
             </a>
           </div>
           <div class="box">
             <a href="" class="m-box2">
-              <p class="tittle"></p>
+              <p class="tittle">Visión</p>
+              <p class="sub-tittle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni culpa ipsam minima porro quae expedita odit molestiae optio nesciunt. Vel, quaerat. Magnam aut porro eius! Explicabo distinctio ab maxime deserunt!</p>
               <figure class="m-b2-figure m-b-f">
                 <img src="" alt="">
               </figure>
@@ -67,5 +68,21 @@
           </ul>
         </div>
       </footer>
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("title-container").style.fontSize = "x-large";
+    document.getElementById("title-container-2").style.fontSize = "medium";
+    document.getElementById("container").style.padding = "1rem";
+  } else {
+    document.getElementById("title-container").style.fontSize = "xxx-large";
+    document.getElementById("title-container-2").style.fontSize = "x-large";
+    document.getElementById("container").style.padding = "3rem";
+  }
+}
+</script>
   </body>
   </html>
