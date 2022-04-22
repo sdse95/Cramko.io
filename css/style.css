@@ -178,6 +178,7 @@ p, a{
     .sec-info p{
         padding-left: 0rem;
         font-size: 1.5rem;
+        font-family: var(--font-primary);
     }
     h1{
         font-size: 3rem;
