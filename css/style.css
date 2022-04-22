@@ -21,11 +21,16 @@ html{
 .nav-menu{
     display: flex;
     padding-left: 2.5rem;
-    justify-content: space-between;
     background-color: var(--color-primary);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .h-l-figure{
+    position: relative;
     height: 50px;
+    transition: 0.2s;
+
 }
 .h-l-figure img{
     height: 100%;
@@ -34,8 +39,7 @@ html{
     display: flex;
     width: 50%;
     list-style: none;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav-menu-ul a{
     text-decoration: none;
@@ -45,13 +49,20 @@ html{
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
+.menu{
+    display: flex;
+    align-items: center;
+}
+#toggler, .nav-menu label{
+    display: none;
+}
 .container{
     background-color: var(--color-secondary);
     border-bottom: 2px solid var(--color-terciary);
     color: #fff;
     line-height: 1.5;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 3rem 0 3rem;
+    transition: 0.2s;
 }
 .main{
     padding-top: 10.8rem ;
@@ -115,3 +126,38 @@ p, a{
 .f-menu p{
     color: var(--color-primary);
 }
+
+
+@media (max-width: 640px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow:  hidden;
+        flex-direction: row-reverse;
+    }
+    .nav-menu{
+        padding: 0 2.5rem 0 2.5rem;
+    }
+    .nav-menu-ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav-menu label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    .ri-menu-line{
+        background-image: url(../assets/icons/menu.png);
+        height: 3rem;
+        width: 3rem;
+        color: var(--font-secondary);
+    }
+
+}
+@media (max-width: 768px)
+
+ 

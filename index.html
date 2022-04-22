@@ -15,17 +15,21 @@
 <body>
     <header class="header">
       <div class="nav-menu">
-        <figure class="h-l-figure">
+        <figure id="h-l-figure" class="h-l-figure">
           <img src="./assets/icons/CRAMKO-LOGO-HEADER.png" alt="Logo">
         </figure>
-        <ul class="nav-menu-ul">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="#">Contactanos</a></li>
-        </ul>
+        <input type="checkbox" id="toggler" onclick="myFunction()">
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+          <ul class="nav-menu-ul">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="./nosotros.html">Nosotros</a></li>
+              <li><a href="./productos.html">Productos</a></li>
+              <li><a href="#">Contactanos</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="container"></div>
+      <div id="container" class="container"></div>
     </header>
     <main class="main">
         <div class="box">
@@ -72,5 +76,29 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, et iste harum ipsam totam voluptatem alias veritatis enim adipisci reprehenderit? Assumenda impedit placeat magni blanditiis, sed voluptas doloribus beatae magnam.</p>
       </div>
     </footer>
+  <script>
+    function myFunction() {
+      var checkBox = document.getElementById("toggler");
+      var figure = document.getElementById("h-l-figure")
+      if( checkBox.checked == true){
+        figure.style.height = "80px";
+        figure.style.top = "5rem";
+      }
+      else{
+        figure.style.height = "50px";
+        figure.style.top = "0"
+      }
+    }
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("container").style.padding = "0";
+      } else {
+        document.getElementById("container").style.padding = " 3rem 0 3rem";
+      }
+    }
+  </script>
 </body>
 </html>
