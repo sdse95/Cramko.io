@@ -68,6 +68,7 @@ html{
     padding-top: 10.8rem ;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-quarter);
 }
 .box{
     height: auto;
@@ -88,7 +89,6 @@ html{
 .section{
     display: flex;
     align-items: center;
-    background-color: var(--color-quarter);
     justify-content: space-between;
 }
 .sec-fig{
@@ -150,12 +150,27 @@ p, a{
     #toggler:checked ~ .menu{
         max-height: 100%;
     }
+    .main{
+        gap: 2rem;
+    }
     .ri-menu-line{
         background-image: url(../assets/icons/menu.png);
         height: 3rem;
         width: 3rem;
         color: var(--font-secondary);
     }
+    .section{
+        justify-content: space-around;
+    }
+    .sec-info{
+        padding-left: 3rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p, a{
+    font-size: 1rem;
+}
 
 }
 @media (max-width: 768px)
