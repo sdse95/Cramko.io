@@ -13,6 +13,7 @@
 }
 html{
     font-size: 62.5%;
+    font-family: var(--font-primary);
 }
 .header{
     position: fixed;
@@ -30,7 +31,7 @@ html{
     position: relative;
     height: 50px;
     transition: 0.05s;
-    left: 0 ;
+    left: 0;
 
 }
 .h-l-figure img{
@@ -44,7 +45,7 @@ html{
 }
 .nav-menu-ul a{
     text-decoration: none;
-    padding: 2rem;
+    padding: 1.3rem;
 }
 .nav-menu-ul a:hover{
     color: var(--color-primary);

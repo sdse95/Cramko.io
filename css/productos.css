@@ -105,6 +105,16 @@ html{
     margin-bottom: 0;
     color: var(--very-light-pink);
 }
+.section{
+    display: grid;
+    place-content: center;
+}
+.section-div{
+    width: 50%;
+}
+.section-div p{
+    
+}
 
 
 .foot{

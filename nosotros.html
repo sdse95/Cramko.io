@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/nosotros.css">
     <link rel="icon" href="./assets/icons/mascara-facial.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -18,12 +18,16 @@
         <figure class="h-l-figure">
           <img src="./assets/icons/CRAMKO-LOGO-HEADER.png" alt="Logo">
         </figure>
-        <ul class="nav-menu-ul">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="#">Contactanos</a></li>
-        </ul>
+        <input type="checkbox" id="toggler" onclick="myFunction()">
+          <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+          <ul class="nav-menu-ul">
+              <li><a href="./index.html">Inicio</a></li>
+              <!--<li><a href="#">Nosotros</a></li>-->
+              <li><a href="./productos.html">Productos</a></li>
+              <li><a href="#">Contactanos</a></li>
+          </ul>
+        </div>
       </div>
       <div id="container" class="container">
         <h1 id="title-container">Nosotros</h1>
@@ -85,26 +89,45 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("title-container").style.fontSize = "x-large";
     document.getElementById("title-container-2").style.fontSize = "medium";
-    document.getElementById("container").style.padding = "1rem";
   } else {
     document.getElementById("title-container").style.fontSize = "xxx-large";
     document.getElementById("title-container-2").style.fontSize = "x-large";
-    document.getElementById("container").style.padding = "3rem";
   }
 }
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+//var video = document.getElementById("myVideo");
+//var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+//function myFunction() {
+//  if (video.paused) {
+//    video.play();
+//    btn.innerHTML = "Pause";
+//  } else {
+//    video.pause();
+//    btn.innerHTML = "Play";
+//  }
+//}
+
+// Function for chekbox === true 
+
+
+function myFunction () {
+  var checkBox = document.getElementById("toggler");
+  var figure = document.getElementById("h-l-figure");
+  var container = document.getElementById("container");
+  var main = document.getElementById("main");
+
+  if (checkBox.checked == true) {
+    document.getElementById("title-container").style.fontSize = "x-large";
+    document.getElementById("title-container-2").style.fontSize = "medium";
+
+  }
+  else{
+    document.getElementById("title-container").style.fontSize = "xx-large";
+    document.getElementById("title-container-2").style.fontSize = "x-large";    
   }
 }
+
 </script>
   </body>
   </html>
