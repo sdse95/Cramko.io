@@ -189,5 +189,11 @@ p, a{
         color: none;
         background-color: none;
     }
+    h1{
+        font-size: 4rem;
+    }
+    p, a{
+        font-size: 2rem;
+    }
 
 }

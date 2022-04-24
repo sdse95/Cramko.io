@@ -32,7 +32,6 @@ html{
     height: 50px;
     transition: 0.05s;
     left: 0;
-
 }
 .h-l-figure img{
     height: 100%;
@@ -87,8 +86,6 @@ html{
     width: 100%;
     height: 100%;
 }
-
-
 .section{
     display: flex;
     align-items: center;

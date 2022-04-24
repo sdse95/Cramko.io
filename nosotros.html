@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index,follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
+  </head>
   <body>
       <header class="header">
         <div class="nav-menu">
-          <figure class="h-l-figure">
+          <figure id="h-l-figure" class="h-l-figure">
             <img src="./assets/icons/CRAMKO-LOGO-HEADER.png" alt="Logo">
           </figure>
           <input type="checkbox" id="toggler" onclick="myFunction()">
-            <label for="toggler"><i class="ri-menu-line"></i></label>
+          <label for="toggler"><i class="ri-menu-line"></i></label>
           <div class="menu">
             <ul class="nav-menu-ul">
                 <li><a href="./index.html">Inicio</a></li>
@@ -34,7 +34,9 @@
           <p id="title-container-2">Quienes somos</p>
         </div>
       </header>
-      <main class="main">
+
+
+      <main class="main" id="main">
           <div class="box">
             <a href="" class="m-box1">
               <h1 class="tittle">Misión</h1>
@@ -69,7 +71,7 @@
             </a>
           </div>
       </main>
-        
+
 
       <footer class="foot">
         <div class="f-menu">
@@ -84,17 +86,17 @@
     <script>
 
       // When the user scrolls down 50px from the top of the document, resize the header's font size
-      window.onscroll = function() {scrollFunction()};
+      window.onscroll = function() {myFunction()};
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("title-container").style.fontSize = "x-large";
-          document.getElementById("title-container-2").style.fontSize = "medium";
-        } else {
-          document.getElementById("title-container").style.fontSize = "xxx-large";
-          document.getElementById("title-container-2").style.fontSize = "x-large";
-        }
-      }
+      //function scrollFunction() {
+      //  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      //    document.getElementById("title-container").style.fontSize = "x-large";
+      //    document.getElementById("title-container-2").style.fontSize = "medium";
+      //  } else {
+      //    document.getElementById("title-container").style.fontSize = "xxx-large";
+      //    document.getElementById("title-container-2").style.fontSize = "x-large";
+      //  }
+      //}
 
       //var video = document.getElementById("myVideo");
       //var btn = document.getElementById("myBtn");
@@ -121,9 +123,16 @@
         if (checkBox.checked == true) {
           document.getElementById("title-container").style.fontSize = "x-large";
           document.getElementById("title-container-2").style.fontSize = "medium";
-
-        }
-        else{
+          figure.style.height = "70px";
+          figure.style.top = "8rem";
+          figure.style.left= "-1rem"
+        } else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("title-container").style.fontSize = "x-large";
+          document.getElementById("title-container-2").style.fontSize = "medium";
+        } else{
+          figure.style.height = "50px";
+          figure.style.top = "0"
+          figure.style.left= "0"
           document.getElementById("title-container").style.fontSize = "xx-large";
           document.getElementById("title-container-2").style.fontSize = "x-large";    
         }

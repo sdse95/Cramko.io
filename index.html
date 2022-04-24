@@ -31,6 +31,8 @@
         </div>
         <div id="container" class="container"></div>
       </header>
+
+      
       <main class="main" id="main">
           <div class="box">
             <a href="#" class="m-box1">
@@ -58,16 +60,7 @@
             <figure class="sec-fig">
               <img class="sec-fig-img" src="./assets/img/cramko-img-principal.png" alt="Nuestro Producto">
             </figure>
-          </section>
-          <section class="section">
-            <article class="sec-info">
-              <h1>Title</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque ex dignissimos tenetur alias quae quibusdam, rem incidunt, nam, quis et culpa! Ratione, sed itaque! Excepturi enim natus fugiat explicabo!</p>
-            </article>
-            <figure class="sec-fig">
-              <img class="sec-fig-img" src="./assets/img/cramko-img-principal.png" alt="Nuestro Producto">
-            </figure>
-          </section>
+          </section> 
       </main>
 
 
@@ -77,6 +70,9 @@
         </div>
       </footer>
     <script>
+
+      window.onscroll = function() {myFunction()};
+
       function myFunction() {
         var checkBox = document.getElementById("toggler");
         var figure = document.getElementById("h-l-figure");
@@ -88,6 +84,8 @@
           figure.style.left= "-1rem"
           container.style.padding = "0rem";
           main.style.padding= "20.8rem 0 0 0"
+        }else if(document.body.scrollTop > 50 || document.documentElement.scrollTop){
+          document.getElementById("container").style.padding = "0";
         }
         else{
           figure.style.height = "50px";
@@ -95,19 +93,6 @@
           figure.style.left= "0"
           container.style.padding = " 3rem 0 3rem";
           main.style.padding = "10.8rem 0 0 0"
-        }
-      }
-
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        var container = document.getElementById("container");
-
-    
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("container").style.padding = "0";
-        } else {
-          document.getElementById("container").style.padding = " 3rem 0 3rem";
         }
       }
     </script>
