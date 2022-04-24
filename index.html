@@ -101,6 +101,9 @@
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
+        var container = document.getElementById("container");
+
+    
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
           document.getElementById("container").style.padding = "0";
         } else {
