@@ -116,14 +116,33 @@ p, a{
 }
 
 .foot{
-    width:100%;
-    height:8rem;
+    display: flex;
+    width: 100%;
+    height: 8rem;
     background: var(--color-secondary);
     border-top: 2px solid var(--color-terciary);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
 }
 .f-menu p{
     color: var(--color-primary);
 }
+.f-media{
+    display: flex;
+    align-items: center;
+}
+.f-media-social{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.f-media-social a img{
+    width: 4rem;
+    height: 4rem;
+}
+
 
 
 @media (max-width: 640px){
@@ -158,7 +177,7 @@ p, a{
     }
     .main{
         gap: 2rem;
-        padding: 18rem 0 24rem 0;
+        padding: 18rem 0 10rem 0;
     }
     .ri-menu-line{
         background-image: url(../assets/icons/menu.png);
@@ -190,10 +209,10 @@ p, a{
         background-color: none;
     }
     h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     p, a{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 }
