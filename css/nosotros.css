@@ -177,7 +177,7 @@ p, a{
     }
     .main{
         gap: 2rem;
-        padding: 18rem 0 10rem 0;
+        padding: 16rem 0 10rem 0;
     }
     .ri-menu-line{
         background-image: url(../assets/icons/menu.png);
@@ -209,10 +209,10 @@ p, a{
         background-color: none;
     }
     h1{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     p, a{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
 }
