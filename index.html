@@ -52,15 +52,7 @@
               <img class="sec-fig-img" src="./assets/img/cramko-img-principal.png" alt="Nuestro Producto">
             </figure>
           </section>
-          <section class="section">
-            <article class="sec-info">
-              <h1>Title</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque ex dignissimos tenetur alias quae quibusdam, rem incidunt, nam, quis et culpa! Ratione, sed itaque! Excepturi enim natus fugiat explicabo!</p>
-            </article>
-            <figure class="sec-fig">
-              <img class="sec-fig-img" src="./assets/img/cramko-img-principal.png" alt="Nuestro Producto">
-            </figure>
-          </section> 
+          
       </main>
 
 
@@ -84,9 +76,6 @@
 
     <script>
 
-      alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
-
-
       window.onscroll = function() {myFunction()};
 
       function myFunction() {
@@ -94,21 +83,38 @@
         var figure = document.getElementById("h-l-figure");
         var container = document.getElementById("container");
         var main = document.getElementById("main");
+
+
+
         if( checkBox.checked == true){
-          figure.style.height = "70px";
-          figure.style.top = "8rem";
-          figure.style.left= "-1rem"
-          container.style.padding = "0rem";
-          main.style.padding= "20.8rem 0 0 0"
-        }else if(document.body.scrollTop > 50 || document.documentElement.scrollTop){
-          document.getElementById("container").style.padding = "0";
+          console.log("checked true");
+          container.style.padding = "0";
+
+          if ( screen.width < "321"){
+
+            console.log("pantalla menor a 321px");
+              
+          }
+          if ( screen.width > "321" && screen.width < "400"){
+            figure.style.height = "45px";
+            figure.style.top = "8rem";
+            figure.style.left= "-1rem"
+          }
         }
-        else{
-          figure.style.height = "50px";
-          figure.style.top = "0"
-          figure.style.left= "0"
-          container.style.padding = " 3rem 0 3rem";
-          main.style.padding = "10.8rem 0 0 0"
+        if( checkBox.checked != true){
+
+          if ( screen.width < "321"){
+
+            console.log("pantalla menor a 321px y checked false");
+              
+          }
+          if ( screen.width > "321" && screen.width < "400"){
+            console.log("pantalla mayor a 321px y menor a 400px cheked false");
+            figure.style.height = "50px";
+            figure.style.top = "0rem";
+            figure.style.left= "0rem";
+            container.style.padding = "3rem 0 3rem";
+          }
         }
       }
     </script>
